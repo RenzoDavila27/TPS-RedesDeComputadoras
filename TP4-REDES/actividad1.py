@@ -10,23 +10,24 @@ def server():
     mensajeRecibido = mensaje[0].split(":")
     direccion = mensaje[1][0]
     if mensajeRecibido[0] == "exit":
-        print(f"El usuario {mensajeRecibido[0]} ({direccionMensaje}) ha abandonado la conversacion")
+        print(f"El usuario {mensajeRecibido[0]} ({direccion}) ha abandonado la conversacion")
     elif mensajeRecibido[1] == "nuevo":
         print(f"El usuario {mensajeRecibido[0]} se ha unido a la conversación")
     else:
-        print(f"{mensajeRecibido[0]} ({direccionMensaje}) dice: {mensajeRecibido[1]}")
+        print(f"{mensajeRecibido[0]} ({direccion}) dice: {mensajeRecibido[1]}")
     
 def client():
     socket_id = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    socket_id.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
     print("Ingrese su nombre de usuario:")
     usuario = input()
-    socket_id.send((f"{usuario}:nuevo").encode())
+    socket_id.sendto((f"{usuario}:nuevo").encode(),("10.65.4.255",60000))
     print("Mensaje a enviar: ")
     bufferSalida = input()
     if bufferSalida == "exit":
         exit = True
 
-    socket_id.send((f"{usuario}:{bufferSalida}").encode())
+    socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),("10.65.4.255",60000))
 
 
 global exit
