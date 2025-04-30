@@ -7,7 +7,8 @@ def server():
     socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST,1)
     print("Escuchando")
     mensaje = socket_server.recvfrom(1000)
-    mensajeRecibido = mensaje[0].split(":")
+    print(mensaje)
+    mensajeRecibido = (mensaje[0].decode()).split(":")
     direccion = mensaje[1][0]
     if mensajeRecibido[0] == "exit":
         print(f"El usuario {mensajeRecibido[0]} ({direccion}) ha abandonado la conversacion")
@@ -25,18 +26,28 @@ def client():
     print("Mensaje a enviar: ")
     bufferSalida = input()
     if bufferSalida == "exit":
+        socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),("10.65.4.255",60000))
         exit = True
+        stop_event.set()
+        hilo1.join() 
+        hilo2.join()
 
     socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),("10.65.4.255",60000))
 
 
 global exit
+global hilo1
+global hilo2
+global stop_event
 exit= False
 
-while exit ==False:
+stop_event = threading.Event()
+
+while exit == False:
     hilo1 = threading.Thread(target=server)
     hilo2 = threading.Thread(target=client)
     hilo1.start()
     hilo2.start()
-    hilo1.join()
+    stop_event.set()
+    hilo1.join() 
     hilo2.join()
