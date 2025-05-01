@@ -1,7 +1,7 @@
 import socket
 import threading
 
-def server():
+def recibir():
     global exit
     global socket_id
     print("Escuchando")
@@ -19,7 +19,7 @@ def server():
         else:
             print(f"{mensajeRecibido[0]} ({direccion}) dice: {mensajeRecibido[1]}")
         
-def client(usuario):
+def enviar(usuario):
     global socket_id
     global exit
     socket_id.sendto((f"{usuario}:nuevo").encode(),("192.168.1.255",60000))
@@ -40,8 +40,8 @@ socket_id.bind(("0.0.0.0", 60000))
 print("Ingrese su nombre de usuario:")
 usuario = input()
 
-hilo1 = threading.Thread(target=server, daemon=True)
-hilo2 = threading.Thread(target=client, args=(usuario,))
+hilo1 = threading.Thread(target=recibir, daemon=True)
+hilo2 = threading.Thread(target=enviar, args=(usuario,))
 hilo1.start()
 hilo2.start()
 hilo1.join() 
