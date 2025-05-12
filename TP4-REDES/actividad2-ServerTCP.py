@@ -8,9 +8,7 @@ def inicio():
     opt = input()
     match opt.lower():
         case "":
-            buscarConexion = threading.Thread(target=conexion)
-            buscarConexion.start()
-            buscarConexion.join()
+            conexion()
         case "exit":
             print("Cerrando servidor...")
             encendido = False
@@ -18,7 +16,6 @@ def inicio():
             print("Opcion invalida")
 
 def conexion():
-    global conectados
     global sockServer
     sockServer.listen(1)
     print("Esperando conexion")
@@ -33,12 +30,13 @@ def conexion():
 
 def recibirMensaje(socket,direccion):
     global sockServer
+    global abandonar
     while True:
         try:
             mensajeDecodificado = ((socket.recv(100000)).decode("utf-8")).split(":")
             if mensajeDecodificado[1] == "exit":
                     print(f"El usuario {mensajeDecodificado[0]} ({direccion}) ha abandonado la conversacion, presione enter para continuar")
-                    conectados.discard(socket)
+                    abandonar = True
                     break
             elif mensajeDecodificado[1] == "nuevo":
                 print(f"\nEl usuario {mensajeDecodificado[0]} se ha unido a la conversación")
@@ -49,13 +47,14 @@ def recibirMensaje(socket,direccion):
     socket.close()
 
 def enviarMensaje(socketCliente):
-    global conectados
-    global buscando
+    global abandonar
     print("Se establecio la conexion, ya puede comunicarse")
     while True:
         bufferSalida = input()
         try:
             if bufferSalida == "exit":
+                if abandonar == True:
+                    return
                 print("No es posible cerrar el proceso servidor si hay un cliente conectado")
             else:
                 socketCliente.send((f"Servidor dice: {bufferSalida}").encode())
@@ -66,6 +65,6 @@ def enviarMensaje(socketCliente):
 sockServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sockServer.bind(("0.0.0.0",60000))
 encendido = True
-
+abandonar = False
 while encendido:
     inicio()

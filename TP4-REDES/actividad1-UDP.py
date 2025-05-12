@@ -19,18 +19,18 @@ def recibir():
         else:
             print(f"{mensajeRecibido[0]} ({direccion}) dice: {mensajeRecibido[1]}")
         
-def enviar(usuario):
+def enviar(usuario, ipBr):
     global socket_id
     global exit
-    socket_id.sendto((f"{usuario}:nuevo").encode(),("192.168.1.255",60000))
+    socket_id.sendto((f"{usuario}:nuevo").encode(),(ipBr,60000))
     print("Ya puede escribir mensajes a la red")
     while exit == False:
         bufferSalida = input()
         if bufferSalida == "exit":
-            socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),("192.168.1.255",60000))
+            socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),(ipBr,60000))
             exit = True
 
-        socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),("192.168.1.255",60000))
+        socket_id.sendto((f"{usuario}:{bufferSalida}").encode(),(ipBr,60000))
 
 
 exit = False
@@ -39,9 +39,11 @@ socket_id.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 socket_id.bind(("0.0.0.0", 60000))
 print("Ingrese su nombre de usuario:")
 usuario = input()
+print("Ingrese la IP de Broadcast:")
+ipBr = input()
 
 hilo1 = threading.Thread(target=recibir, daemon=True)
-hilo2 = threading.Thread(target=enviar, args=(usuario,))
+hilo2 = threading.Thread(target=enviar, args=(usuario,ipBr,))
 hilo1.start()
 hilo2.start()
 hilo1.join() 
