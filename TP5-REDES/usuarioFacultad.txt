@@ -1,0 +1,2 @@
+contraseña: ramiroyrenzo12
+usuario: PruebaSSH
