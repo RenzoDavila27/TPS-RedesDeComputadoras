@@ -1,0 +1,21 @@
+body{
+    background-image: url('https://i.pinimg.com/736x/09/fe/87/09fe8761ea2702efdbd2350af705c3c9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+}
+
+label img{
+    width: 50px;
+    height: auto;
+    transition: transform 0.02s ease-in-out;
+}
+
+label:hover img{
+    transform: translate(20px,-20px);
+}

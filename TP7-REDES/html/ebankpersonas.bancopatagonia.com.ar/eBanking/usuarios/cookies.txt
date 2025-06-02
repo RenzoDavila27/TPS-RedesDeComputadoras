@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+ebankpersonas.bancopatagonia.com.ar	TRUE	/eBanking	FALSE	1999999999	JSESSIONID	9DB152F74350491BA8D263408F2E4D2F.ebankper267
+ebankpersonas.bancopatagonia.com.ar	TRUE	/	FALSE	1999999999	cook_personas_	905977610.62751.0000
+

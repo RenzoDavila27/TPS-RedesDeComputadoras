@@ -1,0 +1,262 @@
+.btnIn {
+	float: left;
+	background: url(../images/botones/botonIz.gif) no-repeat ;
+	padding: 0 0 0 2px;
+	margin: 5px 0;
+	
+}
+
+.btnInAdhesion {
+	float: left;
+	padding: 0 0 0 2px;
+	margin: 5px 0;
+	border:none;
+}
+.btn:hover,.btnIn:hover{
+
+	/* for IE8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+
+}
+
+.btnInAdhesionHover:hover{
+	/* for IE8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+font-size:12px !important;
+}
+
+.btnAdhesion:hover{
+
+	/* for IE8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+font-size:12px !important;
+}
+
+.btn {
+	float: left;
+	background: url(../images/botones/botonIz.gif) no-repeat;
+	padding: 0 0 0 3px;
+	margin: 5px 0;
+}
+
+.btnAdhesion {
+	float: left;
+	padding: 0 0 0 3px;
+	margin: 5px 0;
+	border:none;
+}
+
+.btnLogin {
+	float: left;
+	padding: 0 0 0 3px;
+	margin: 5px 0;
+}
+
+.btnIn input{
+	float: left;
+	height: 21px;
+	background: url(../images/botones/botonCentro.gif) repeat-x left top;
+	line-height: 21px;
+	padding:0 4px;
+	padding-bottom:2px;
+	color: #0C2E72;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.btnInAdhesion input{
+	float: left;
+	height: 21px;
+	line-height: 21px;
+	padding-left:4px;
+	color: #000000;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:normal;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+	background-color:#f1ecec;
+	width:80px;
+}
+
+.btnDisabled input{
+	background-color: #cccccc; !important;
+  	color: #adadad; !important;
+  	pointer-events:none; !important;
+}
+
+.btnInAdhesion input:hover{
+	font-size:12px !important;
+}
+/* /* .noHover{ */ */
+/* /*     pointer-events: none; */ */
+/* /* } */ */
+/* .btnAceptarIn input:hover{ */
+/* 	font-size:12px !important; */
+/* } */
+
+.btnIn button {
+	float: left;
+	height: 21px;
+	background: url(../images/botones/botonCentro.gif) repeat-x left top;
+	line-height: 21px;
+	padding:0 4px;
+	padding-bottom:2px;
+	color: #0C2E72;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.btnInAdhesion button {
+	float: left;
+	height: 21px;
+	line-height: 21px;
+	padding:0 4px;
+	padding-bottom:2px;
+	color: #000000;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:normal;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.btn a:visited{
+	font-weight: normal;
+}
+input.fakeButton{
+		background: url(../images/botones/botonIngresar.gif) no-repeat;
+		width: 88px;
+		height: 25px;
+}
+input.fakeButton2{
+		background: url(../images/botones/botonIngresarOff.gif) no-repeat;
+		width: 88px;
+		height: 25px;
+}
+/*input.fakeButton:hover{
+	background: none !important;
+}*/
+/*
+
+.btn a:hover{
+	cursor:default;
+	text-decoration:none !important;
+}
+
+*/
+
+.btn a{
+	float: left;
+	height: 21px;
+	background: url(../images/botones/botonCentro.gif) repeat-x left top;
+	line-height: 21px;
+	padding: 0 10px;
+	color: #0C2E72;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold !important;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	text-decoration:none !important;
+	cursor: pointer;
+}
+
+.btnAdhesion a{
+	float: left;
+	height: 21px;
+	line-height: 21px;
+	padding-right:4px;
+	color: #000000;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:normal !important;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	text-decoration:none !important;
+	cursor: pointer;
+	background-color:#f1ecec;
+	width: 76px;
+}
+.btnIn span  {
+	background: url(../images/botones/botonDer.gif) no-repeat;
+	float: left;
+	width: 10px !important;
+	height: 27px;
+}
+.btn span  {
+	background: url(../images/botones/botonDer.gif) no-repeat;
+	float: left;
+	width: 10px !important;
+	height: 27px;
+}
+.clear {
+	clear: both;
+}
+
+.btnnn a{
+	float: left;
+	height: 21px;
+	background: url(../images/botones/botonCentro.gif) repeat-x left top;
+	line-height: 21px;
+	padding: 0 10px;
+	color: #0C2E72;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold !important;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	text-decoration:none !important;
+	cursor: pointer;
+}
+/* 	float: left;
+	height: 21px;
+	background: url(../images/botones/botonCentro.gif) repeat-x left top;
+	line-height: 21px;
+	padding:0 4px;
+	padding-bottom:2px;
+	color: #0C2E72;
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold;
+	text-decoration: none;
+	text-align:center;
+	border: 0;
+	margin: 0;
+	cursor: pointer; */
+	
+}
+

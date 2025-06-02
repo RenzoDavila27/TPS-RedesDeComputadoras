@@ -1,0 +1,14 @@
+HTTrack3.49-5 launched on Fri, 28 Mar 2025 12:23:01 at https://ebankpersonas.bancopatagonia.com.ar/eBanking/usuarios/login.htm +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://ebankpersonas.bancopatagonia.com.ar/eBanking/usuarios/login.htm -O "/home/pablo/websites/bancopatagonia_login" -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A100000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:23:49	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://ebankpersonas.bancopatagonia.com.ar/eBanking/dwr/engine.js
+12:23:54	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.google.com/recaptcha/api.js
+12:25:03	Error: 	"Bad Request" (400) at link https://ebankpersonas.bancopatagonia.com.ar/eBanking/styles/${ctx}/images/iconos/mnsError.gif (from https://ebankpersonas.bancopatagonia.com.ar/eBanking/styles/adhesion.css)
+
+HTTrack Website Copier/3.49-5 mirror complete in 2 minutes 2 seconds : 117 links scanned, 122 files written (1567771 bytes overall) [1252886 bytes received at 10269 bytes/sec], 13.8 requests per connection
+(1 errors, 2 warnings, 0 messages)

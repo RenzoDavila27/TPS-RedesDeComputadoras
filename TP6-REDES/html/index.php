@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
     <center>
         <img src="https://www.uncuyo.edu.ar/assets/imgs/logo_uncu23.png" alt="Universidad Nacional de Cuyo" title="volver al inicio" style="width: 350px; height: auto;">

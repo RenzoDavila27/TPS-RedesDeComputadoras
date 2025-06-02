@@ -1,0 +1,217 @@
+/* ========================================== */
+/* ============ ERRORES EXTERNOS ============ */
+/* ========================================== */
+
+#bodyError {
+	/*VER COMPATIBILIDAD PARA CENTRADO EN TODA LA PAGINA*/
+	background-color: #E1E1E1;
+}
+
+#errorExterno {
+	width: 450px;
+	margin-left: 250px;
+	margin-top: 120px;
+} 
+
+#logoPatagoniaError {
+	/*Imagen de fondo*/
+	background: transparent url(../images/errores/ErrorEBP.gif) no-repeat left top;
+	height: 29px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+#HeaderContenido {
+	/*Imagen de fondo*/
+	background: transparent url(../images/errores/ErrorTop.gif) no-repeat left top;
+	width: 450px;
+	height: 104px;
+}
+
+#errorExternoHeader #titulo {
+	/*Caso particular para mostrar un titulo*/
+	font-family: arial;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0C2E72;
+	margin-bottom: 5px;
+	padding-top: 25px;
+	margin-left: 65px;
+}
+
+#errorExternoHeader #mensaje {
+	/*Opciones de la fuente normal*/
+	font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    color: #0C2E72;
+	
+	width: 250px;
+	height: auto;
+	margin-left: 65px;
+}
+
+#errorExternoContent {	
+	/*Tamaños del div*/
+	width: 450px; /*Viene dado por el tamaño del header*/
+		
+	background-color: #ffffff;
+}
+
+#errorExternoContent #contenido {
+	/*Fuente comun del div*/
+	font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333333;
+	width: 260px;
+	
+	padding-top: 15px;
+	margin-left: 65px;
+	padding-bottom: 15px;
+}
+
+#errorExternoFooter {
+	width: 450px;
+}
+
+#errorExternoFooter #dotLineBack {
+	background-color: #ffffff;
+	width: 450px;
+}
+
+#dotLineBack #dotLine {
+	background: transparent url(../images/errores/lineaPuntos.gif) repeat-x center center;
+	height: 3px;
+	margin-left: 60px;
+	width: 300px;
+}
+
+#errorExternoFooter #logos{
+	background-color: #ffffff;
+	/*Opciones de la fuente normal*/
+	font-family: arial;
+    font-size: 10px;
+    font-weight: normal;
+    color: #0C2E72;
+	padding-top: 10px;
+	padding-left: 60px;
+	height: 40px;
+}
+
+#errorExternoFooter #logos a {
+	text-decoration: none;
+}
+
+#errorExternoFooter #logos a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#logo1 {
+	float: left;
+}
+
+#logo1 span {
+	padding-left: 8px;
+}
+
+#logo1 a img {
+	padding-top: 5px;
+	padding-left: 5px;
+	border: 0;
+}
+
+#logo2 {
+	float: right;
+	padding-right: 75px;
+}
+
+#logo2 a img {
+	padding-top: 10px;
+	padding-left: 3px;
+	border: 0;
+}
+
+#errorExternoFooter #finalLine {
+	background: transparent url(../images/errores/ErrorDown.gif) no-repeat left top;
+	height: 9px;
+}
+
+
+/* ========================================== */
+/* ============ ERRORES INTERNOS ============ */
+/* ========================================== */
+
+
+#errorInterno {
+	width: 500px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+#errorInternoHeader {
+	background: transparent url(../images/errores/ErrorInternobarra.gif) no-repeat left top;
+	width: 500px;
+	height: 93px;
+	margin: 0;
+	padding: 0;
+}
+
+#errorInternoHeader #titulo {
+	/*Caso particular para mostrar un titulo*/
+	font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0C2E72;
+    
+	margin-bottom: 5px;
+	margin-left: 200px;
+	
+	padding-top: 25px;
+}
+
+#errorInternoHeader #descripcion {
+	/*Opciones de la fuente normal*/
+	font-family: arial;
+    font-size: 14px;
+    font-weight: normal;
+    color: #0C2E72;
+	
+	width: 240px;
+	height: auto;
+	
+	margin-left: 200px;
+}
+
+#errorInternoContent {	
+	/*Tamaños del div*/
+	width: 500px; /*Viene dado por el tamaño del header*/
+		
+	background-color: #ffffff;
+}
+
+#errorInternoContent #informacion {
+	/*Fuente comun del div*/
+	font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333333;
+	width: auto;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	
+	margin-left: 50px;
+}
+
+#errorInternoFooter {
+	background-color: #ffffff;
+	padding-left: 200px;
+	padding-bottom: 15px;
+}
+
+#logoPatagonia {
+	background: transparent url(../images/errores/ErrorInternoBP.gif) no-repeat left top;
+	width: 99px;
+	height: 12px;
+}
