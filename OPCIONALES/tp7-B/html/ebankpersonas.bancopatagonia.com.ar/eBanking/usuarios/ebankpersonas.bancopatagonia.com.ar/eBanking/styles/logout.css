@@ -1,0 +1,47 @@
+#box {
+
+	background-color: white; 
+	height: 200px; 
+	width: 350px;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+
+#background {
+	
+	margin: 0pt auto; 
+	background: transparent url(../images/PatagoniaHB_CierreFinalLOGOUT.jpg) no-repeat scroll left top; 
+	padding-top: 0px; 
+	height: 204px; 
+	-moz-background-clip: -moz-initial; 
+	-moz-background-origin: -moz-initial; 
+	-moz-background-inline-policy: -moz-initial; 
+	width: 355px
+
+}
+
+
+
+#leyend1 {
+	color: #0C2E72; 
+	font-size:15px; 
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	text-align: justify;
+	text-align: center;
+}
+
+
+
+#leyend2 {
+	color: #0C2E72;
+	font-size:12px;
+	font-family: Arial, Verdana, sans-serif; 
+	text-align: justify;
+	text-align: center;
+}
+#leyend2 b{
+	font-weight:bolder; 
+}
+

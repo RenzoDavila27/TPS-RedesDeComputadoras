@@ -1,0 +1,12 @@
+<!doctype html><html lang="es"><head><title>Estado HTTP 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>Estado HTTP 400 – Bad Request</h1><hr class="line" /><p><b>Tipo</b> Informe de Excepción</p><p><b>mensaje</b> Invalid character found in the request target [&#47;eBanking&#47;styles&#47;${ctx}&#47;images&#47;iconos&#47;mnsError.gif ]. The valid characters are defined in RFC 7230 and RFC 3986</p><p><b>Descripción</b> El requerimiento enviado por el cliente era sintácticamente incorrecto.</p><p><b>excepción</b></p><pre>java.lang.IllegalArgumentException: Invalid character found in the request target [&#47;eBanking&#47;styles&#47;${ctx}&#47;images&#47;iconos&#47;mnsError.gif ]. The valid characters are defined in RFC 7230 and RFC 3986
+	org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:492)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	java.base&#47;java.lang.Thread.run(Thread.java:834)
+</pre><p><b>nota</b> La traza completa de la causa de este error se encuentra en los archivos de registro del servidor.</p><hr class="line" /><h3>Apache Tomcat/10.1.39</h3></body></html>

@@ -1,0 +1,72 @@
+
+#keyboard {
+	position: absolute;
+	display: none;
+	width: 320px;
+	background-color: #FFFFFF;
+
+
+}
+
+#spacebar input {
+	width: 180px;
+	margin: 0 auto;
+	margin-left: 150px;
+}
+
+#shift, #shifton {
+	width: 29px;
+	text-align: left;
+}
+
+
+#row0_shift, #row1_shift, #row2_shift, #row3_shift {
+	display: none;
+	margin:0px !important;
+}
+
+
+
+
+
+.teclaEnter {
+	background: url(../images/tecladoVirtual/enter.gif) no-repeat;
+	width:47px;
+
+}
+.teclaShift{
+	background: url(../images/tecladoVirtual/shift.gif) no-repeat;
+}
+.teclaSpaceBar{
+	background: url(../images/tecladoVirtual/enter.gif) no-repeat;
+}
+.teclaBack{
+	background: url(../images/tecladoVirtual/back.gif) no-repeat;
+}
+input{
+	margin:0px !important;
+	background: url(../images/tecladoVirtual/tecla.gif) no-repeat center;
+	font-weight:bolder;
+	height:17px;
+	width:18px;
+	text-align:center;
+	border:0px;
+	padding: 0px !important;
+
+}
+
+.noBackground{
+	background: #ffffff;
+}
+.estiloTeclas{
+	float:left;
+	width:17px;
+	margin:0px !important;
+	padding:0px !important;
+	}
+.filasTeclas{
+	clear:both;
+	margin:0px !important;
+	padding:0px !important;
+	
+}
